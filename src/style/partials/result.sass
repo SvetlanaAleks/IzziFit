@@ -1,0 +1,79 @@
+.result
+	padding-top: 210px
+	padding-bottom: 146px
+	overflow: hidden
+	+r(1300)
+		padding-top: 180px
+		padding-bottom: 130px
+	+r(1140)
+		padding-top: 160px
+		padding-bottom: 110px
+	+r(1024)
+		padding-top: 140px
+		padding-bottom: 90px
+	+r(768)
+		padding-top: 100px
+	+r(640)
+		padding-top: 70px
+		padding-bottom: 70px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		+r(1024)
+			align-items: center
+		+r(640)
+			display: block
+	&__info
+		max-width: 470px
+		width: 100%
+		padding-top: 30px
+		+r(1300)
+			max-width: 390px
+		+r(1140)
+			max-width: 350px
+		+r(1024)
+			max-width: 40%
+			padding-top: 0
+		+r(640)
+			max-width: 100%
+			text-align: center
+			margin-bottom: 70px
+	&__title
+		margin-bottom: 40px
+		+r(1140)
+			margin-bottom: 30px
+		+r(1024)
+			margin-bottom: 20px
+	&__photos
+		position: relative
+		max-width: 610px
+		width: 100%
+		+r(1300)
+			max-width: 570px
+		+r(1140)
+			max-width: 510px
+		+r(1024)
+			max-width: 55%
+		+r(640)
+			max-width: 70%
+			margin: auto
+		+r(480)
+			max-width: 90%
+	&__photo
+		border: 10px solid #FFFFFF
+		box-shadow: 0px 50px 60px -10px rgba(0, 0, 0, 0.1)
+		&--2
+			position: absolute
+			transform: rotate(7.63deg)
+			right: 0
+			top: -42px
+			z-index: -1
+		+r(1300)
+			max-width: 300px
+			width: 100%
+		+r(1140)
+			max-width: 270px
+		+r(1024)
+			max-width: 53%
+		+r(768)
+			border: 5px solid #FFFFFF

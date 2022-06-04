@@ -1,0 +1,294 @@
+.game
+	padding-top: 228px
+	padding-bottom: 188px
+	background: url('../img/svg/bg_game.svg') no-repeat center 680px, #3F2264
+	position: relative
+	+r(1300)
+		padding-top: 200px
+		padding-bottom: 140px
+		background-position-y: 580px
+	+r(1140)
+		padding-top: 160px
+		padding-bottom: 120px
+		background-position-y: 450px
+	+r(1024)
+		padding-top: 130px
+		padding-bottom: 80px
+		background-position-y: 38%
+		background-size: 1224px
+	+r(640)
+		padding-top: 90px
+		padding-bottom: 70px
+		background-size: 655px
+		background-position-y: 44%
+	+r(480)
+		padding-top: 60px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		&--1
+			margin-bottom: 233px
+			.game
+				&__info
+					padding-top: 134px
+					max-width: 471px
+				&__photo
+					margin-left: 5px
+				&__photo-more-1
+					bottom: -70px
+					right: -208px
+				&__photo-more-2
+					top: -27px
+					right: -390px
+					width: 100%
+		&--2
+			margin-bottom: 156px
+			.game
+				&__info
+					max-width: 390px
+					padding-top: 229px
+				&__photo
+					text-align: right
+					margin-right: 10px
+				&__photo-more-1
+					left: -194px
+					top: 164px
+		&--3
+			padding-bottom: 480px
+			.game
+				&__info
+					max-width: 400px
+					margin-right: 75px
+					margin-left: auto
+				&__photo
+					display: flex
+					align-items: flex-end
+					justify-content: flex-start
+					position: absolute
+					bottom: 190px
+					left: 0
+					width: 2560px
+					margin: auto
+					left: calc(50% - 1390px)
+				&__item
+					min-width: 165px
+					width: 6.5%
+					margin-bottom: 20px
+					border-radius: 12px
+					overflow: hidden
+					+nlt
+						margin-right: 25px
+					&--big
+						min-width: 333px
+						width: 13%
+						margin-bottom: 0
+		+r(1300)
+			&--1
+				margin-bottom: 200px
+				.game
+					&__info
+						padding-top: 105px
+						max-width: 471px
+					&__photo
+						margin-left: 0
+					&__photo-main
+						max-width: 350px
+						width: 100%
+					&__photo-more-1
+						bottom: -60px
+						right: -195px
+						max-width: 330px
+					&__photo-more-2
+						right: -350px
+			&--2
+				margin-bottom: 130px
+				.game
+					&__info
+						padding-top: 180px
+					&__photo
+						margin-right: 0
+						max-width: 410px
+					&__photo-more-1
+						max-width: 390px
+			&--3
+				padding-bottom: 410px
+				.game
+					&__info
+						max-width: 400px
+						margin-right: 75px
+					&__photo
+						bottom: 140px
+						left: calc(50% - 1260px)
+					&__item
+						min-width: 150px
+						width: 6.5%
+						margin-bottom: 20px
+						+nlt
+							margin-right: 25px
+						&--big
+							min-width: 300px
+							width: 11%
+							margin-bottom: 0
+		+r(1140)
+			&--1
+				margin-bottom: 150px
+				.game
+					&__info
+						padding-top: 85px
+						max-width: 410px
+					&__photo-main
+						max-width: 320px
+					&__photo-more-1
+						right: -165px
+						max-width: 300px
+					&__photo-more-2
+						right: -320px
+			&--2
+				margin-bottom: 130px
+				.game
+					&__info
+						padding-top: 180px
+					&__photo
+						margin-right: 0
+						max-width: 360px
+					&__photo-more-1
+						max-width: 360px
+			&--3
+				padding-bottom: 410px
+				.game
+					&__info
+						max-width: 360px
+						margin-right: 45px
+					&__photo
+						bottom: 155px
+						left: calc(50% - 1160px)
+					&__item
+						min-width: 120px
+						width: 5.5%
+						+nlt
+							margin-right: 20px
+						&--big
+							min-width: 270px
+		+r(1024)
+			&--1
+				margin-bottom: 130px
+				align-items: center
+				.game
+					&__info
+						padding-top: 0
+						max-width: 43%
+					&__photo
+						width: 42%
+					&__photo-main
+						max-width: 86%
+					&__photo-more-1
+						right: -34%
+						max-width: 80%
+					&__photo-more-2
+						right: -82%
+			&--2
+				margin-bottom: 80px
+				align-items: center
+				.game
+					&__info
+						padding-top: 0
+						max-width: 40%
+					&__photo
+						width: 47%
+						max-width: 100%
+					&__photo-main
+						max-width: 79%
+					&__photo-more-1
+						max-width: 79%
+						left: -18%
+						top: 30%
+			&--3
+				padding-bottom: 40%
+				.game
+					&__info
+						max-width: 47%
+						margin-right: 0
+					&__photo
+						bottom: 5%
+						left: -56%
+						width: 243%
+					&__item
+						min-width: inherit
+						width: 5.5%
+						margin-bottom: 10px
+						+nlt
+							margin-right: 15px
+						&--big
+							min-width: inherit
+							width: 10.5%
+							margin-bottom: 0
+		+r(640)
+			flex-direction: column
+			text-align: center
+			&--1
+				margin-bottom: 100px
+				flex-direction: column-reverse
+				.game
+					&__info
+						max-width: 100%
+					&__photo
+						width: 70%
+						margin-left: -29%
+			&--2
+				margin-bottom: 80px
+				.game
+					&__info
+						max-width: 100%
+					&__photo
+						width: 70%
+						margin-bottom: 20px
+			&--3
+				padding-bottom: 0
+				flex-direction: column-reverse
+				.game
+					&__info
+						max-width: 100%
+					&__photo
+						position: relative
+						left: calc(50% - 640px)
+					&__item
+						min-width: 82px
+						+nlt
+							margin-right: 10px
+						&--big
+							min-width: 167px
+	&__info
+		width: 100%
+		+r(640)
+			margin-bottom: 30px
+	&__title
+		margin-bottom: 40px
+		+r(1140)
+			margin-bottom: 30px
+		+r(1024)
+			margin-bottom: 20px
+	&__photo
+		position: relative
+	&__photo-more-1
+		position: absolute
+	&__photo-more-2
+		position: absolute
+	&__btn
+		max-width: 330px
+		margin-top: 40px
+		&--mob
+			display: none
+		+r(1140)
+			margin-top: 30px
+		+r(1024)
+			margin-top: 20px
+			max-width: 270px
+		+r(640)
+			margin: auto
+			max-width: 330px
+			&--desc
+				display: none
+			&--mob
+				display: block
+		+r(480)
+			max-width: 100%

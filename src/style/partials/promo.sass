@@ -1,0 +1,153 @@
+.promo
+	padding-top: 245px
+	padding-bottom: 67px
+	background: url('../img/bg_promo.jpg') no-repeat center top
+	text-align: right
+	overflow: hidden
+	position: relative
+	+r(1300)
+		padding-bottom: 55px
+		padding-top: 205px
+		background-size: 2100px
+	+r(1140)
+		padding-top: 155px
+		background-size: 1930px
+	+r(1024)
+		background-size: 1600px
+		padding-bottom: 0
+	+r(768)
+		background-size: 1480px
+		background-position-x: calc(50% - -60px)
+	+r(640)
+		background-size: 1260px
+	+r(480)
+		padding-top: 208px
+		background: url('../img/bg_promo_mob.jpg') no-repeat calc(50% - -14px) top
+	&__title
+		max-width: 690px
+		width: 100%
+		margin-left: auto
+		font-style: italic
+		font-weight: 700
+		font-size: 120px
+		line-height: 80%
+		margin-bottom: 53px
+		color: $white
+		+r(1300)
+			font-size: 105px
+		+r(1140)
+			font-size: 95px
+			margin-bottom: 40px
+		+r(1024)
+			font-size: 80px
+			margin-bottom: 30px
+			max-width: 600px
+		+r(768)
+			font-size: 10vw
+			max-width: 65%
+		+r(640)
+			font-size: 55px
+			max-width: 320px
+			margin-bottom: 20px
+		+r(480)
+			font-size: 48px
+			max-width: 300px
+			padding-right: 10px
+			margin-bottom: 15px
+	&__desc
+		font-weight: 600
+		font-size: 32px
+		line-height: 103%
+		color: $white
+		margin-bottom: 125px
+		+r(1300)
+			font-size: 30px
+			margin-bottom: 85px
+		+r(1140)
+			font-size: 28px
+			margin-bottom: 70px
+		+r(1024)
+			font-size: 24px
+			margin-bottom: 60px
+		+r(768)
+			font-size: 20px
+			margin-bottom: 30px
+		+r(640)
+			font-size: 18px
+		+r(480)
+			font-size: 14px
+			padding-right: 10px
+
+	&__photo
+		+r(1300)
+			max-width: 540px
+			width: 100%
+		+r(1024)
+			max-width: 450px
+		+r(768)
+			max-width: 440px
+		+r(640)
+			max-width: 390px
+		+r(480)
+			max-width: 335px
+	&__bottom
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		padding-top: 74px
+		padding-bottom: 65px
+		background: url('../img/svg/bg_pink.svg') no-repeat center
+		+r(1024)
+			background-size: 2130px
+			padding-top: 35px
+			padding-bottom: 25px
+		+r(640)
+			padding-top: 45px
+		+r(480)
+			padding-top: 35px
+			padding-bottom: 15px
+	&__wrap
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
+		+r(480)
+			justify-content: center
+	&__links
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-right: 90px
+		+r(1024)
+			margin-right: 7%
+		+r(640)
+			margin-right: 30px
+		+r(480)
+			margin-right: 0
+			justify-content: center
+	&__link
+		padding-top: 10px
+		padding-bottom: 10px
+		+nlt
+			padding-right: 35px
+			margin-right: 35px
+			border-right: 1px solid $white
+		+r(1024)
+			width: 130px
+			flex-shrink: 0
+			box-sizing: content-box
+			+nlt
+				margin-right: 30px
+				padding-right: 30px
+		+r(640)
+			width: 110px
+	&__code
+		box-shadow: 10px 20px 34px rgba(0, 0, 0, 0.11)
+		+r(1024)
+			width: 90px
+		+r(768)
+			width: 80px
+		+r(640)
+			width: 70px
+		+r(480)
+			display: none

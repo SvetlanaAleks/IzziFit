@@ -1,0 +1,108 @@
+.menu
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	position: absolute
+	top: 50px
+	left: 0
+	right: 0
+	padding: 0 50px
+	max-width: 2560px
+	width: 100%
+	margin: auto
+	z-index: 1
+	&.fixed
+		position: fixed
+		backdrop-filter: blur(12px)
+		border-bottom-left-radius: 20px
+		border-bottom-right-radius: 20px
+		top: 0
+		padding-top: 10px
+		padding-bottom: 10px
+		max-width: 100%
+		align-items: center
+		.nav__link
+			color: #3F2264
+		.menu
+			&__logo
+				display: none
+				width: 114px
+				&--b
+					display: block
+			&__list
+				margin-top: 0
+	+r(1300)
+		top: 30px
+	+r(1140)
+		padding: 0 30px
+	+r(640)
+		top: 20px
+		&.fixed
+			.menu
+				&__logo
+					width: 82px
+	+r(480)
+		padding: 0 20px
+		top: 25px
+	&__logo
+		width: 164px
+		&--b
+			display: none
+		+r(1140)
+			width: 150px
+		+r(1024)
+			width: 120px
+		+r(768)
+			width: 100px
+		+r(480)
+			width: 90px
+			margin-left: -7px
+	&__list
+		display: flex
+		align-items: center
+		margin-top: 14px
+		+r(1024)
+			width: 100%
+			justify-content: center
+			margin-top: 10px
+		+r(640)
+			display: none
+	&__item
+		+nlt
+			margin-right: 44px
+		+r(1140)
+			+nlt
+				margin-right: 35px
+		+r(1024)
+			flex-shrink: 0
+			+nlt
+				margin-right: 7%
+		+r(768)
+			+nlt
+				margin-right: 5%
+	&__btn
+		max-width: 180px
+		+r(1024)
+			max-width: 150px
+		+r(768)
+			max-width: 130px
+		+r(480)
+			max-width: 105px
+
+
+.nav
+	&__item
+		font-weight: 500
+		font-size: 18px
+		line-height: 22px
+		+r(1024)
+			font-size: 16px
+			line-height: 22px
+		+r(768)
+			font-size: 14px
+			line-height: 18px
+	&__link
+		text-decoration: none
+		color: white
+		&:hover
+			text-decoration: underline
