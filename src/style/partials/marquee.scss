@@ -1,0 +1,46 @@
+$blockHeight: 168px;
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.b-marquee-line {
+  &__flow {
+    font-size: 0;
+    line-height: 0;
+    height: $blockHeight;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &-in {
+      display: block;
+      height: $blockHeight;
+      .cssanimations & {
+        width: 200%;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee 30s linear infinite;
+      }
+    }
+    &-block {
+      white-space: nowrap;
+      .no-cssanimations &:last-child {
+        display: none;
+      }
+      .cssanimations & {
+        white-space: nowrap;
+        float: left;
+        width: 47%;
+      }
+    }
+    &-item {
+      height: $blockHeight;
+      margin: 0 5px;
+    }
+  }
+}

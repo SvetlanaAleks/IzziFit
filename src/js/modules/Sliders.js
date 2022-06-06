@@ -5,13 +5,20 @@ const Sliders = (function () {
   return {
     initFeaturesSlider: function () {
       featuresSlider.slick({
-        dots: false,
         infinite: true,
-        variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 0,
         arrows: false,
-        focusOnSelect: true,
+        easing: "linear",
+        cssEase: "linear",
+        waitForAnimate: false,
+        speed: 3000,
+        edgeFriction: 0,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        autoSlidesToShow: true,
+        variableWidth: true,
       });
     },
     init: function () {
