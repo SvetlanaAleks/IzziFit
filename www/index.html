@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="/css/main.css"/>
     <title>IzziFit</title>
   </head>
-  <body>
-    <div class="menu js-fixed-menu"><img class="menu__logo" src="/img/svg/logo.svg" alt=""/><img class="menu__logo menu__logo--b" src="/img/svg/logo-b.svg" alt=""/>
+  <body id="top">
+    <div class="menu js-fixed-menu"><img class="menu__logo" src="/img/svg/logo.svg" alt=""/><a class="js-scroll" href="#top"><img class="menu__logo menu__logo--b" src="/img/svg/logo-b.svg" alt=""/></a>
       <ul class="menu__list nav">
-        <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#start">Start</a></li>
-        <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#features">Features</a></li>
+        <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#top">Start</a></li>
+        <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#start">Features</a></li>
         <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#train">Train & Play</a></li>
         <li class="menu__item nav__item"><a class="nav__link js-scroll" href="#reviews">Reviews</a></li>
       </ul><a class="menu__btn btn btn--small" href="#">Get My Plan</a>
     </div>
-    <header class="promo">
+    <header class="promo" id="promo">
       <div class="container">
-        <h1 class="promo__title">Weight loss game for women</h1>
-        <p class="promo__desc">Get fit while playing</p>
+        <h1 class="promo__title js-promo-title">Weight loss game for women</h1>
+        <p class="promo__desc js-promo-desc">Get fit while playing</p>
         <picture>
-          <source srcset="/img/promo@2x.png 2x" type="image/png"/><img class="promo__photo" src="/img/promo.png 1x" alt="promo" type="image/png"/>
+          <source srcset="/img/promo@2x.png 2x" type="image/png"/><img class="promo__photo js-promo-photo" src="/img/promo.png 1x" alt="promo" type="image/png"/>
         </picture>
       </div>
       <div class="promo__bottom">
         <div class="container">
           <div class="promo__wrap">
-            <div class="promo__links"><a class="promo__link" href="#"><img src="/img/svg/appstore.svg" alt="appstore"/></a><a class="promo__link" href="#"><img src="/img/svg/googleplay.svg" alt="googleplay"/></a></div><img class="promo__code" src="/img/svg/code.svg" alt=""/>
+            <div class="promo__links"><a class="promo__link" href="https://apps.apple.com/us/app/izzifit-play-and-lose-weight/id1609221440" target="_blank"><img src="/img/svg/appstore.svg" alt="appstore"/></a><a class="promo__link" href="#"><img src="/img/svg/googleplay.svg" alt="googleplay"/></a></div><img class="promo__code" src="/img/svg/code.svg" alt=""/>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
         <div class="functions__wrap functions__wrap--1">
           <div class="functions__desc js-functions-desc-1">
             <h2 class="functions__title title">Smart workouts & training plans</h2>
-            <p class="functions__text desc">Over <span class="color">500</span> personal exercises</p><a class="functions__btn functions__btn--desc btn btn--big" href="#">Get My Plan</a>
+            <p class="functions__text desc">Over <span class="color">500 personal exercises</span>, picked specifically for your needs. The exercise program is suitable for both beginners and specialists alike</p><a class="functions__btn functions__btn--desc btn btn--big" href="#">Get My Plan</a>
           </div>
           <div class="functions__photos">
             <picture>
@@ -59,13 +59,13 @@
           </div>
           <div class="functions__desc js-functions-desc-2">
             <h2 class="functions__title title">Calorie calculator</h2>
-            <p class="functions__text desc">Personalized <span class="color">diet & healthy</span> meals. Menus for&nbsp;fastest results. 10 meal plans with unlimited&nbsp;substitutions. </p>
+            <p class="functions__text desc">A calorie calculator that helps you keep track of what you eat! Just enter all of your meals, and we would calculate the calories for you!</p>
           </div>
         </div>
         <div class="functions__wrap functions__wrap--3">
           <div class="functions__desc js-functions-desc-3">
             <h2 class="functions__title title">Release your energy</h2>
-            <p class="functions__text desc">Menus for fastest results. 10 meal plans with unlimited substitutions. Complete workouts to get <span class="color">amazing rewards.</span></p>
+            <p class="functions__text desc">Do your best to get fit! Complete workouts to recieve amazing rewards, and turn your <span class="color">calories into energy! </span></p>
           </div>
           <div class="functions__photos">
             <picture>
@@ -83,8 +83,8 @@
     </div>
     <section class="features" id="features">
       <div class="container">
-        <h2 class="features__title title">Some features</h2>
-        <p class="features__desc desc">Personalized <span class="color">diet & healthy</span> meals. Menus for fastest results. 10 meal plans with unlimited substitutions.</p>
+        <h2 class="features__title title">Features</h2>
+        <p class="features__desc desc">Calorie Calculator, Mood tracker, Water balance tracker and reminders, Meal and training plans, Smart workouts</p>
       </div>
       <div class="features__list js-features-slider">
         <div class="feature features__item">
@@ -129,14 +129,14 @@
             </picture>
           </div>
           <div class="game__info js-game-desc-1">
-            <h2 class="game__title title title--light">Now it’s time for some fun! </h2>
-            <p class="game__desc desc desc--light">Personalized menus for fastest results. 10 meal plans with unlimited substitutions. Turn your calories into <span class="color">wheel spin.</span></p>
+            <h2 class="game__title title title--light">Now it’s time for some fun!</h2>
+            <p class="game__desc desc desc--light">Ever felt bored while working out? With IzziFit, you can <span class="color">gameify your workouts</span> by turning your calories into wheel spins! You can lose weight by having fun by participating in an engaging casual game.</p>
           </div>
         </div>
         <div class="game__wrap game__wrap--2">
           <div class="game__info js-game-desc-2">
-            <h2 class="game__title title title--light">Release your energy</h2>
-            <p class="game__desc desc desc--light">Complete daily tasks and <span class="color">improve </span>your&nbsp;buildings</p><a class="game__btn game__btn--desc btn btn--big" href="#">Train And Play</a>
+            <h2 class="game__title title title--light">Daily Tasks</h2>
+            <p class="game__desc desc desc--light">Complete daily tasks by doing exercises and <span class="color">improve your buidlings! </span>Level up your gaming expirience by earning and spending points.</p><a class="game__btn game__btn--desc btn btn--big" href="#">Train And Play</a>
           </div>
           <div class="game__photo">
             <picture>
@@ -207,7 +207,7 @@
           </div>
           <div class="game__info js-game-desc-3">
             <h2 class="game__title title title--light">Explore new&nbsp;levels</h2>
-            <p class="game__desc desc desc--light">Personalized menus for fastest results. Turn your workouts into <span class="color">adventure.</span></p>
+            <p class="game__desc desc desc--light">Unlock new areas to explore and new <span class="color">challenges to complete</span>! The more calories you burn, the more new worlds you get to explore! </p>
           </div>
         </div>
       </div>
@@ -218,14 +218,14 @@
         <p class="quote__name">Marta, Health Coach</p>
       </div>
     </section>
-    <section class="result">
+    <section class="result" id="result">
       <div class="container">
         <div class="result__wrapper">
-          <div class="result__info">
+          <div class="result__info js-result-desc">
             <h2 class="result__title title">Weight loss easier</h2>
-            <p class="result__desc desc">Personalized <span class="color">diet & healthy </span>meals. Menus for fastest results. 10 meal plans with unlimited substitutions.</p>
+            <p class="result__desc desc">A few studies have proven that making a tedius exercise <span class="color">more fun can improve prouctivity. </span>So what are you waiting for? Download izziFit now and get on your fitness journey!</p>
           </div>
-          <div class="result__photos">
+          <div class="result__photos js-result-photos">
             <picture>
               <source srcset="/img/result_1@2x.jpg 2x" type="image/png"/><img class="result__photo" src="/img/result_1.jpg 1x" alt="result" type="image/png"/>
             </picture>
@@ -244,15 +244,15 @@
         <h2 class="reviews__title title">Users love our plans</h2>
         <p class="reviews__desc desc">Here's what people are saying about IzziFit and stories</p>
         <div class="reviews__list">
-          <div class="review reviews__item">
+          <div class="review reviews__item js-review-item-1">
             <p class="review__name">Angelina</p><img class="review__stars" src="/img/svg/stars.svg" alt=""/>
             <p class="review__desc">I absolutely love my transformation! I’ve always struggled with some extra weight, and I am so pleased to see how I am changing! I got a lot of compliments recently! And it’s all due to this amazing app!</p>
           </div>
-          <div class="review reviews__item">
+          <div class="review reviews__item js-review-item-2">
             <p class="review__name">Charlotte32</p><img class="review__stars" src="/img/svg/stars.svg" alt=""/>
             <p class="review__desc">When my husband saw me playing a game, he wanted to try it as well! Now both of us are doing exercises, eating healthy food, drinking water, and then playing a game, and we love it! And now we feel much more energized!</p>
           </div>
-          <div class="review reviews__item">
+          <div class="review reviews__item js-review-item-3">
             <p class="review__name">Madison C</p><img class="review__stars" src="/img/svg/stars.svg" alt=""/>
             <p class="review__desc">Are the developers planning to add new games? I like combining training and games so much that I want more and more new games and new characters!</p>
           </div>
