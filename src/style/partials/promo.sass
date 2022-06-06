@@ -1,14 +1,25 @@
 .promo
-	padding-top: 245px
+	padding-top: 170px
 	padding-bottom: 67px
-	background: url('../img/bg_promo.jpg') no-repeat center top
+	background: url('../img/bg_promo.jpg') no-repeat center -100px
 	text-align: right
 	overflow: hidden
 	position: relative
+	background-size: 2560px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: -5px
+		left: 0
+		right: 0
+		height: 80px
+		background: white
 	+r(1300)
 		padding-bottom: 55px
 		padding-top: 205px
 		background-size: 2100px
+		background-position: center top
 	+r(1140)
 		padding-top: 155px
 		background-size: 1930px
@@ -17,7 +28,7 @@
 		padding-bottom: 0
 	+r(768)
 		background-size: 1480px
-		background-position-x: calc(50% - -60px)
+		background-position-x: calc(50% - -20px)
 	+r(640)
 		background-size: 1260px
 	+r(480)
@@ -29,15 +40,10 @@
 		margin-left: auto
 		font-style: italic
 		font-weight: 700
-		font-size: 120px
+		font-size: 100px
 		line-height: 80%
-		margin-bottom: 53px
+		margin-bottom: 45px
 		color: $white
-		+r(1300)
-			font-size: 105px
-		+r(1140)
-			font-size: 95px
-			margin-bottom: 40px
 		+r(1024)
 			font-size: 80px
 			margin-bottom: 30px
@@ -56,19 +62,10 @@
 			margin-bottom: 15px
 	&__desc
 		font-weight: 600
-		font-size: 32px
+		font-size: 24px
 		line-height: 103%
 		color: $white
-		margin-bottom: 125px
-		+r(1300)
-			font-size: 30px
-			margin-bottom: 85px
-		+r(1140)
-			font-size: 28px
-			margin-bottom: 70px
-		+r(1024)
-			font-size: 24px
-			margin-bottom: 60px
+		margin-bottom: 35px
 		+r(768)
 			font-size: 20px
 			margin-bottom: 30px
@@ -98,6 +95,7 @@
 		padding-top: 74px
 		padding-bottom: 65px
 		background: url('../img/svg/bg_pink.svg') no-repeat center
+		z-index: 1
 		+r(1024)
 			background-size: 2130px
 			padding-top: 35px
